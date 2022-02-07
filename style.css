@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+:root{
+    --soft-white:#e4e6eb;
+    --soft: #cacbcc;
+    --danger: #e41e3f;
+    --green:#45bd62;
+    --edit-text:#65676b;
+    --low-white:#e4e6eb;
+    --yellow:#f7bd35;
+    --primary:#1b74e4;
+    --bg:#e4e6eb;
+    --public:rgb(133, 131, 131);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+   background-color: var(--soft-white);
+}
+
+.nav{
+    display: flex;
+    background-color: white;
+    height: 60px;
+}
+.nav-left{
+   width: 25%;
+}
+.search{
+   display: flex;
+    margin: 5px;
+}
+.search-box{
+    padding: 10px 5px;
+    border-radius: 40px;
+    background-color: var(--soft-white);
+}
+.search-img{
+   width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.search-box i{
+    color: grey;
+    margin-right: 5px;
+}
+.search-input{
+    width: 220px;
+    background-color: var(--soft-white);
+    border: none;
+    font-size: 15x;
+    font-weight: bolder;
+    color: var(--edit-text);
+}
+.search-input:focus{
+    outline: none;
+}
+.nav-center{
+    width: 50%;
+}
+.center-box{
+   display: flex;
+    justify-content: center;
+    margin-top: 5px;
+
+}
+.center-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    font-size: 25px;
+    padding: 10px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    margin: 0 15px;
+    position: relative;
+    transition: 0.5s;
+}
+.center-icon:hover{
+    background-color: var(--soft-white);
+    border-radius: 12px;
+}
+.noti{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--danger);
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+}
+.one{
+    top: 5px;
+    right: 25px;
+}
+.two{
+    top: 5px;
+    right: 20px;
+    width: 20px;
+    height:15px ;
+    border-radius: 20px;
+}
+#ho{
+    color: var(--primary) !important;
+    border-bottom-color:5px solid var(--primary) !important;
+}
+#ho:hover{
+    background-color: white;
+    border-radius: 0;
+}
+.nav-right{
+    width: 25%;
+}
+.right-box{
+     display: flex;
+    justify-content: space-between;
+}
+.right-a{
+    transition: 0.5s;
+}
+.right-a:hover{
+    background-color: var(--soft-white);
+    border-radius: 60px;
+}
+.pf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.pf img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.pf p{
+    font-weight: bolder;
+}
+.right-b{
+    display: flex;
+    margin: 5px;
+}
+.right-icon{
+   width: 45px;
+    height: 45px;
+    border-radius: 50% ;
+    font-size: 20px;
+    background-color:var(--bg) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #313131;
+    margin: 5px;
+    transition: 0.5s;
+}
+.right-icon:hover{
+    background-color: var(--soft);
+}
+.three{
+    top: 5px;
+    right: 50px;
+    width: 20px;
+    height:15px ;
+    border-radius: 20px;
+}
+.four{
+    top: 5px;
+    right: 100px;
+}
+
+.bodypart{
+    display: flex;
+}
+.left-aside{
+   width: 25%;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+}
+/*.left-aside:hover{*/
+/*    height: 100vh;*/
+/*    overflow-x: hidden;*/
+/*    overflow: scroll;*/
+/*}*/
+.left-list{
+
+}
+.list-icon{
+   display: flex;
+    padding: 10px;
+    transition: 0.5s;
+
+}
+.list-icon:hover{
+    background-color: var(--soft);
+    border-radius: 10px;
+}
+.list-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.list-icon i{
+    font-size: 20px;
+}
+.list-icon p{
+    text-align: center;
+    margin-left: 10px;
+    font-weight: bolder;
+    color: black;
+}
+#ee{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--soft);
+}
+.divider{
+    margin: 5px;
+    height: 0.3vh;
+    background-color: #969595;
+}
+.left-shortcuts{
+
+}
+.shortcuts-head{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+}
+.v{
+    /*position: absolute;*/
+    /*top: 10px;*/
+    /*right: 80px;*/
+}
+.shortcuts{
+
+}
+.shortcuts-icon{
+    display: flex;
+    padding: 10px;
+    transition: 0.5s;
+}
+.shortcuts-icon:hover{
+    background-color: var(--soft);
+    border-radius: 10px;
+}
+.shortcuts-icon img{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+}
+.shortcuts-icon p{
+    text-align: center;
+    margin-left: 10px;
+    font-weight: bolder;
+    color: black;
+}
+.bottom {
+    margin:5px 2px;
+    cursor: default;
+}
+.footer{
+
+}
+.footer span{
+    padding: 5px;
+    font-size: 15px;
+    color: #313131;
+    font-weight: bolder;
+    transition: 1s;
+}
+.footer span:hover{
+    text-decoration: underline;
+}
+.priv{
+
+}
+.priv span{
+    padding: 10px;
+    font-size: 15px;
+    color: #313131;
+    font-weight: bolder;
+    transition: 1s;
+}
+.priv i{
+    color: var(--edit-text);
+    cursor: pointer;
+}
+.priv span:hover{
+    text-decoration: underline;
+}
+
+.center{
+    width: 50%;
+}
+.center-myday{
+    display: flex;
+    position: relative;
+}
+.myday{
+    width: 110px;
+    height: 180px;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+.myday:hover{
+    
+}
+#plus{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 36px;
+    left: 30px;
+    color: white;
+    background-color: var(--primary);
+    z-index: 2;
+}
+.myday img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.myday p{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-weight: 1000;
+    color: white;
+   
+}
+#h{
+    background-color: white;
+    position:absolute;
+    bottom: 0px;
+    width: 98px;
+    height: 40px;
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+    text-align: center;
+    z-index: 1;
+}
+#cat{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: var(--edit-text);
+    position: absolute;
+    top: 75px;
+    right: -10px;
+    transition: 0.5s;
+}
+#cat:hover{
+    background-color:rgb(219, 219, 219);
+}.center-post{
+
+}
+.post{
+    width: 550px;
+  margin: 10px auto;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px black;
+}
+.post-create{
+     display: flex;
+}
+.post-create img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+
+
+}
+.inputbox{
+    border-radius: 30px;
+    background-color: white;
+}
+.post-create input{
+     width: 35em;
+     padding: 15px;
+     border: none;
+     border-radius: 30px;
+     color: var(--edit-text);
+     font-weight: bolder;
+     transition: 0.5s;
+    
+}
+.post-create input:focus{
+    outline: none;
+}
+.post-create input:hover{
+    background-color: var(--soft);
+}
+.post-emo{
+  display: flex;
+  justify-content: space-evenly;
+}
+.emo{
+  padding: 10px 15px;
+  transition: 0.5s;
+}
+.emo:hover{
+    background-color: var(--soft);
+    border-radius: 10px;
+}
+.emo-srr{
+    color: var(--edit-text);
+    font-weight: bolder;
+}
+.room{
+    width: 550px;
+    margin: 10px auto;
+    border: 1px solid var(--soft);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+}
+.room-create{
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(209, 209, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 35px;
+    margin-top: 8px;
+}
+.room-add {
+    position: relative;
+    padding: 5px;
+}
+.room-add img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--green);
+    position: absolute;
+    top: 30px;
+    right: 8px;
+}
+.room-move i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color:white;
+    top: 10px;
+    right:10px;
+    color: var(--edit-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.room-move i:hover{
+    background-color: var(--soft);
+}
+.center-otherpost{
+   
+}
+.see-postup,.see-postdown,.caption{
+    width: 550px;
+    margin: auto;
+    border: 1px solid var(--soft);
+    /* padding: 10px; */
+    display: flex;
+    position: relative;
+}
+.up{
+    padding: 10px;
+    margin:  auto;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    border-bottom: none;
+    
+}
+.cup{
+    border-top: none;
+    border-bottom: none;
+}
+.see-head{
+    display: flex;
+}
+.see-head img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.see-head h4{
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    cursor: pointer;
+}
+.see-head h5{
+    position: absolute;
+    bottom: 10px;
+    left: 65px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--public);
+    cursor: pointer;
+}
+.see-head h4:hover{
+    text-decoration: underline;
+}
+.see-head h5:hover{
+    text-decoration: underline;
+}
+.cap{
+    padding: 10px;
+    font-weight: bolder;
+    
+}
+.see-head i{
+    position: absolute;
+    bottom: 15px;
+    left: 110px;
+    font-size: 15px;
+    color: var(--public);
+    cursor: pointer;
+}
+.see-option i{
+   position: absolute;
+   right: 10px;
+   font-size: 20px;
+   width: 35px;
+   height: 35px;
+   padding: 10px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.5s;
+}
+.see-option i:hover{
+    background-color:var(--soft);
+   
+}
+.see-body{
+   margin-top: 0px;
+}
+.see-body img{
+    width:100%;
+  
+}
+.allreact{
+    width: 550px;
+    margin: auto;
+    border: 1px solid var(--soft);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+.reactbox{
+    display: flex;
+    justify-content: space-between;
+    border-top: none;
+    border-bottom: none;
+}
+.emobox{
+    display: flex;
+    padding: 5px;
+    margin-left: 5px;
+}
+.emobox h4{
+    margin-left: 5px;
+    transition: 0.5s;
+}
+.emobox h4{
+    cursor: pointer;
+}
+.emobox i:hover{
+    cursor: pointer;
+}
+.seehow{
+    padding: 5px;
+    transition: 0.5s;
+}
+.seehow p:hover{
+    cursor: pointer;
+    text-decoration: underline
+}
+.reactss{
+   display: flex;
+   border-top: none;
+ 
+}
+.emoji{
+    padding: 5px;
+    width: 40%;
+    text-align: center;
+    transition: 0.5s;
+}
+.emoji i{
+    font-size: 20px;
+}
+.emoji:hover{
+    cursor: pointer;
+    background-color: var(--soft);
+    border-radius: 5px;
+    
+}
+
+
+.right-aside{
+    width: 25%;
+}

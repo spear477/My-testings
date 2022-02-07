@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #8e9eab;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            scroll-behavior: smooth;
+        }
+        .news{
+           columns:3 250px;
+           column-rule: 1px solid black;
+           column-gap: 10px;
+           padding: 10px 15px;
+        }
+        .a{
+           width: 100%;
+           margin :10px ;
+
+        }
+        .images{
+           width: 100%;
+        }
+        .title{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .author{
+
+        }
+        .description{
+
+        }
+        .a span{
+            margin-left: 30%;
+        }
+
+    </style>
+</head>
+<body> 
+    <h2 style="padding: 10px; margin: 10px auto; text-align: center; text-decoration: underline;">Technology News</h2>
+    <div class="news">
+     
+
+    </div>
+   <script src="./newapi.js"></script>
+   <script>
+       console.log(data.articles[0]);
+       let news = document.querySelector(".news");
+       let datas =data.articles;
+        
+       datas.forEach((el,index) => {
+              news.innerHTML += `
+              
+              <div class="a">
+                 <img src="${el.urlToImage}" class="images" alt="">
+                 <h4 class="title">${el.title}</h4>
+                 <span>${el.publishedAt}</span>
+                 <small class="author">${el.author}</small>
+                 <p class="description">${el.description}</p>
+             </div>
+              `;
+       });
+
+
+   </script>
+</body>
+</html>
