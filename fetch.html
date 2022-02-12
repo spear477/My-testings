@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .news{
+           columns:3 250px;
+           margin: 100px auto;
+         
+           
+        }
+        .a{
+         padding: 10px 15px;
+         border: 1px solid white;
+         border-radius: 10px;
+         box-shadow:1px 5px 10px black;
+         margin: 15px 5px;
+        }
+        .images{
+           width: 100%;
+           border-radius: 10px;
+        }
+        .title{
+           
+        }
+        .author{
+
+        }
+        .description{
+
+        }
+        .a span{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+
+    </div>
+    <p id="load" >
+    </p>
+
+<script>
+    let load = document.getElementById("load");
+     load.innerHTML =`
+     <img src="images/loading1.png!bw340" alt="" style=" margin:100px 500px  ;">
+        `;
+    fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=7648a777dbe14f149a1e1a0d8499196d')
+  .then(response => response.json())
+  .then(data =>{
+      let article = data.articles;
+      let news = document.querySelector(".news");
+      article.map(function(el,index){
+              news.innerHTML += `
+              <div class="a">
+                 <img src="${el.urlToImage}" class="images" alt="">
+                 <h4 class="title">${el.title}</h4>
+                 <span>${el.publishedAt}</span>
+                 <small class="author">${el.author}</small>
+                 <p class="description">${el.description}</p>
+             </div>
+              `;
+      });
+
+
+
+
+
+
+  });
+
+    
+</script>
+</body>
+</html>
