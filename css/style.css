@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary-soft:#f3f3f3;
+}
+
+.nav-menu{
+
+}
+.nav-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-title{
+   padding: 5px 0;
+   text-transform:uppercase;
+   font-weight:bold;
+   color: #272727;
+}
+.menu-item{
+   transition: 0.2s;
+}
+
+.menu-item:hover{
+    background-color:var(--primary-soft);
+    border-radius: 0.25rem;
+}
+.menu-item-link{
+    padding: 10px;
+   display: flex;
+   justify-content:space-between;
+   color:var(--dark);
+   text-decoration: none;
+}
+.menu-item-link.active{
+    background-color: var(--bs-primary);
+    border-radius:0.25rem   ;
+    color:white;
+}
+
+.menu-item span {
+
+}
+.menu-item i{
+
+}
+.spacer{
+    padding: 10px;
+}
+
+
+.brand-logo{
+    position:sticky;
+    top:0;
+    background-color:white;
+}
+
+.content{
+    background-color: var(--primary-soft);
+    overflow: scroll;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) inset;
+}
+
+.header{
+    position: sticky;
+    top:0.2rem;
+    z-index: 2000;
+}
+
+.sidebar{
+   overflow:scroll;
+}
+
+.card{
+    border:none;
+} 
+
+.status-card{
+
+}
+
+.status-card:hover{
+     transform: translateY(-3px);
+     box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.status-card:active{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.show-sidebar-btn{
+    cursor: pointer;
+}
+
+.full-screen-card{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    z-index:2005;
+    overflow:scroll;
+}
+
+@media screen and (max-width :850px){
+    .sidebar{
+        position: fixed;
+        width: 300px;
+        z-index: 2001;
+        display: block !important;
+        background-color: white;
+        margin-left: -100%;
+    }
+    .respon{
+        margin-top: 90px;
+    }
+}
+
+.user-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.ov-img{
+    margin-left: -25px;
+    transition: 0.3s ;
+    cursor: pointer;
+}
+.ov-img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);  
+}
+
+.item-car{
+    margin-top: -100px;
+}
+
+.item-card-img{
+    height: 200px;
+}
+
+.sub-list tr{
+     transition: 0.2s;
+     cursor: pointer;
+} 
+.sub-list tr:active{
+    transform: scale(1.02);
+}
+
+
